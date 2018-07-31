@@ -19,13 +19,7 @@ namespace Quest //all hitpoints change to just points
         {
             InitializeComponent();
 
-            player = new Player();
-
-            player.CurrentPoints = 10;
-            player.MaximumPoints = 10;
-            player.Gold = 20;
-            player.ExperiencePoints = 0;
-            player.Level = 1;
+            player = new Player(10, 10, 20, 0, 1);
 
             lblPoints.Text = player.CurrentPoints.ToString();
             lblGold.Text = player.Gold.ToString();

@@ -9,5 +9,11 @@ namespace Engine
     public class Elixir : Item
     {
         public int AmountToHeal { get; set; }
+
+        public Elixir(int id, string name, string namePlural, int amountToHeal) : base(id, name, namePlural)
+        {
+            AmountToHeal = amountToHeal;
+        }
     }
+    
 }
