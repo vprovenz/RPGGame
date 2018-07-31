@@ -1,0 +1,6 @@
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Engine\bin\Debug\Engine.dll
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Engine\bin\Debug\Engine.pdb
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Engine\obj\Debug\Engine.csproj.CoreCompileInputs.cache
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Engine\obj\Debug\Engine.dll
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Engine\obj\Debug\Engine.pdb

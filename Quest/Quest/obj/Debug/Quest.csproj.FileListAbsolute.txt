@@ -1,0 +1,12 @@
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\bin\Debug\Quest.exe.config
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\bin\Debug\Quest.exe
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\bin\Debug\Quest.pdb
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\bin\Debug\Engine.dll
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\bin\Debug\Engine.pdb
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\obj\Debug\Quest.csprojResolveAssemblyReference.cache
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\obj\Debug\Quest.Properties.Resources.resources
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\obj\Debug\Quest.csproj.GenerateResource.Cache
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\obj\Debug\Quest.csproj.CoreCompileInputs.cache
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\obj\Debug\Quest.exe
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\obj\Debug\Quest.pdb
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\Quest\obj\Debug\Quest.Quest.resources

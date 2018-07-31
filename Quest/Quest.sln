@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quest", "Quest\Quest.csproj", "{D2B13ECF-552B-461D-974F-1730BD0A6C7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{0921A8D1-37FC-407A-99CE-495ADB72BCA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D2B13ECF-552B-461D-974F-1730BD0A6C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2B13ECF-552B-461D-974F-1730BD0A6C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2B13ECF-552B-461D-974F-1730BD0A6C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0921A8D1-37FC-407A-99CE-495ADB72BCA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0921A8D1-37FC-407A-99CE-495ADB72BCA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0921A8D1-37FC-407A-99CE-495ADB72BCA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0921A8D1-37FC-407A-99CE-495ADB72BCA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
