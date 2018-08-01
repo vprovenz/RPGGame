@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public static class World
+    public static class Swamp
     {
         public static readonly List<Item> Items = new List<Item>();
         public static readonly List<Ogre> Ogres = new List<Ogre>();
@@ -41,7 +41,7 @@ namespace Engine
         public const int LOCATION_ID_BRIDGE = 8;
         public const int LOCATION_ID_SPIDER_FIELD = 9;
 
-        static World()
+        static Swamp()
         {
             PopulateItems();
             PopulateOgres();
