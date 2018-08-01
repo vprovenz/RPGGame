@@ -1,0 +1,3 @@
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\ShrekSwamp\obj\Debug\ShreksSwamp.csprojResolveAssemblyReference.cache
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\ShrekSwamp\obj\Debug\Quest.exe
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\ShrekSwamp\obj\Debug\Quest.pdb

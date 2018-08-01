@@ -1,0 +1,3 @@
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\ShreksSwamp\obj\Debug\ShreksSwamp.Properties.Resources.resources
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\ShreksSwamp\obj\Debug\ShreksSwamp.csproj.GenerateResource.Cache
+C:\Users\victo\Documents\COOP\Projects\RPGGame\Quest\ShreksSwamp\obj\Debug\ShreksSwamp.csproj.CoreCompileInputs.cache
