@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdventureQuest.cs" />
-    <Compile Include="Boss.cs" />
+    <Compile Include="Gremlin.cs" />
     <Compile Include="FinishedQuest.cs" />
     <Compile Include="Elixir.cs" />
     <Compile Include="Inventory.cs" />

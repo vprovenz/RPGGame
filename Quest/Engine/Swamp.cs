@@ -9,7 +9,7 @@ namespace Engine
     public static class Swamp
     {
         public static readonly List<Item> Items = new List<Item>();
-        public static readonly List<Ogre> Ogres = new List<Ogre>();
+        public static readonly List<Gremlin> Gremlins = new List<Gremlin>();
         public static readonly List<Quest> Quests = new List<Quest>();
         public static readonly List<Location> Locations = new List<Location>();
 
@@ -65,21 +65,21 @@ namespace Engine
 
         private static void PopulateGremlins()
         {
-            Ogre gnome = new Ogre(MONSTER_ID_GNOME, "Nefarious Garden Gnome", 5, 3, 10, 3, 3);
+            Gremlin gnome = new Gremlin(MONSTER_ID_GNOME, "Nefarious Garden Gnome", 5, 3, 10, 3, 3);
             gnome.TreasureChest.Add(new Treasure(ItemByID(ITEM_ID_SHOE), 75, false));
             gnome.TreasureChest.Add(new Treasure(ItemByID(ITEM_ID_RING), 75, true));
 
-            Ogre dragon = new Ogre(MONSTER_ID_DRAGON, "Sly Dragon", 5, 3, 10, 3, 3);
+            Gremlin dragon = new Gremlin(MONSTER_ID_DRAGON, "Sly Dragon", 5, 3, 10, 3, 3);
             dragon.TreasureChest.Add(new Treasure(ItemByID(ITEM_ID_DRAGON_SCALE), 75, false));
             dragon.TreasureChest.Add(new Treasure(ItemByID(ITEM_ID_DRAGON_TOOTH), 75, true));
 
-            Ogre shrek = new Ogre(MONSTER_ID_SHREK, "Shrek", 20, 5, 50, 10, 10);
+            Gremlin shrek = new Gremlin(MONSTER_ID_SHREK, "Shrek", 20, 5, 50, 10, 10);
             shrek.TreasureChest.Add(new Treasure(ItemByID(ITEM_ID_BEJEWELED_EYE), 75, true));
             shrek.TreasureChest.Add(new Treasure(ItemByID(ITEM_ID_GOLD_TOOTH), 25, false));
 
-            Ogres.Add(gnome);
-            Ogres.Add(dragon);
-            Ogres.Add(shrek);
+            Gremlins.Add(gnome);
+            Gremlins.Add(dragon);
+            Gremlins.Add(shrek);
         }
 
         private static void PopulateQuests()
@@ -110,7 +110,7 @@ namespace Engine
 
         private static void PopulateLocations()
         {
-            // Create each location
+            //Craft locations
             Location home = new Location(LOCATION_ID_HOME, "Home", "Welcome back to your lovely home!");
 
             Location townSquare = new Location(LOCATION_ID_TOWN_SQUARE, "Town square", "Bright sunny day out...");
@@ -119,20 +119,20 @@ namespace Engine
             apothecary.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_APOTHECARY);
 
             Location alchemistsGarden = new Location(LOCATION_ID_APOTHECARY_GARDEN, "Garden", "Lots of interesting plants are growing here.");
-            alchemistsGarden.OgreLivingHere = MonsterByID(MONSTER_ID_GNOME);
+            alchemistsGarden.GremlinLivingHere = GremlinByID(MONSTER_ID_GNOME);
 
-            Location farmhouse = new Location(LOCATION_ID_FARMHOUSE, "Farmhouse", "THere is a farmer tending to crops beside the farmhouse.");
+            Location farmhouse = new Location(LOCATION_ID_FARMHOUSE, "Farmhouse", "There is a farmer tending to crops beside the farmhouse.");
             farmhouse.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_FARMERS_FIELD);
 
             Location farmersField = new Location(LOCATION_ID_FARM_FIELD, "Farmer's field", "You see rows of vegetables growing here.");
-            farmersField.OgreLivingHere = MonsterByID(MONSTER_ID_DRAGON);
+            farmersField.GremlinLivingHere = GremlinByID(MONSTER_ID_DRAGON);
 
             Location guardPost = new Location(LOCATION_ID_GUARD_POST, "Guard post", "There is a big burly-looking guard here.", ItemByID(ITEM_ID_GUARD_PASS));
 
             Location bridge = new Location(LOCATION_ID_BRIDGE, "Bridge", "A cobblestone bridge crosses a swift murky river.");
 
             Location shrekForest = new Location(LOCATION_ID_SHREK_FOREST, "Forest", "An eerie vibe permeates the low-hanging trees");
-            shrekForest.OgreLivingHere = MonsterByID(MONSTER_ID_SHREK);
+            shrekForest.GremlinLivingHere = GremlinByID(MONSTER_ID_SHREK);
 
             //Map locations
             home.LocationToNorth = townSquare;
@@ -177,9 +177,9 @@ namespace Engine
             return Items.Where(item => item.ID == id).FirstOrDefault();
         }
 
-        public static Ogre MonsterByID(int id)
+        public static Gremlin GremlinByID(int id)
         {
-            return Ogres.Where(ogre => ogre.ID == id).FirstOrDefault();
+            return Gremlins.Where(ogre => ogre.ID == id).FirstOrDefault();
         }
 
         public static Quest QuestByID(int id)
