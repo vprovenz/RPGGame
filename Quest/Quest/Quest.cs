@@ -131,15 +131,15 @@ namespace Quest
                     rtbMessages.Text += "You receive the " + newLocation.QuestAvailableHere.Name + " quest." + Environment.NewLine;
                     rtbMessages.Text += newLocation.QuestAvailableHere.Description + Environment.NewLine;
                     rtbMessages.Text += "To complete it, return with:" + Environment.NewLine;
-                    foreach (DoneQuest qci in newLocation.QuestAvailableHere.FinishedQuests)
+                    foreach (FinishedQuest qci in newLocation.QuestAvailableHere.FinishedQuests)
                     {
                         if (qci.Quantity == 1)
                         {
-                            rtbMessages.Text += qci.Quantity.ToString() + " " + qci.Details.Name + Environment.NewLine;
+                            rtbMessages.Text += qci.Quantity.ToString() + " " + qci.Item.Name + Environment.NewLine;
                         }
                         else
                         {
-                            rtbMessages.Text += qci.Quantity.ToString() + " " + qci.Details.NamePlural + Environment.NewLine;
+                            rtbMessages.Text += qci.Quantity.ToString() + " " + qci.Item.NamePlural + Environment.NewLine;
                         }
                     }
                     rtbMessages.Text += Environment.NewLine;
@@ -208,7 +208,7 @@ namespace Quest
             {
                 if (inventoryItem.Quantity > 0)
                 {
-                    dgvInventory.Rows.Add(new[] { inventoryItem.Details.Name, inventoryItem.Quantity.ToString() });
+                    dgvInventory.Rows.Add(new[] { inventoryItem.Item.Name, inventoryItem.Quantity.ToString() });
                 }
             }
         }
@@ -226,7 +226,7 @@ namespace Quest
 
             foreach (AdventureQuest playerQuest in player.Quests)
             {
-                dgvQuests.Rows.Add(new[] { playerQuest.Details.Name, playerQuest.IsCompleted.ToString() });
+                dgvQuests.Rows.Add(new[] { playerQuest.Quest.Name, playerQuest.IsCompleted.ToString() });
             }
         }
 
@@ -236,11 +236,11 @@ namespace Quest
 
             foreach (Inventory inventoryItem in player.Inventory)
             {
-                if (inventoryItem.Details is Weapon)
+                if (inventoryItem.Item is Weapon)
                 {
                     if (inventoryItem.Quantity > 0)
                     {
-                        weapons.Add((Weapon)inventoryItem.Details);
+                        weapons.Add((Weapon)inventoryItem.Item);
                     }
                 }
             }
@@ -267,11 +267,11 @@ namespace Quest
 
             foreach (Inventory inventoryItem in player.Inventory)
             {
-                if (inventoryItem.Details is Elixir)
+                if (inventoryItem.Item is Elixir)
                 {
                     if (inventoryItem.Quantity > 0)
                     {
-                        healingPotions.Add((Elixir)inventoryItem.Details);
+                        healingPotions.Add((Elixir)inventoryItem.Item);
                     }
                 }
             }
@@ -349,15 +349,15 @@ namespace Quest
                 // Add the looted items to the player's inventory
                 foreach (Inventory inventoryItem in lootedItems)
                 {
-                    player.AddItemToInventory(inventoryItem.Details);
+                    player.AddItemToInventory(inventoryItem.Item);
 
                     if (inventoryItem.Quantity == 1)
                     {
-                        rtbMessages.Text += "You loot " + inventoryItem.Quantity.ToString() + " " + inventoryItem.Details.Name + Environment.NewLine;
+                        rtbMessages.Text += "You loot " + inventoryItem.Quantity.ToString() + " " + inventoryItem.Item.Name + Environment.NewLine;
                     }
                     else
                     {
-                        rtbMessages.Text += "You loot " + inventoryItem.Quantity.ToString() + " " + inventoryItem.Details.NamePlural + Environment.NewLine;
+                        rtbMessages.Text += "You loot " + inventoryItem.Quantity.ToString() + " " + inventoryItem.Item.NamePlural + Environment.NewLine;
                     }
                 }
 
@@ -423,7 +423,7 @@ namespace Quest
             // Remove the potion from the player's inventory
             foreach (Inventory ii in player.Inventory)
             {
-                if (ii.Details.ID == potion.ID)
+                if (ii.Item.ID == potion.ID)
                 {
                     ii.Quantity--;
                     break;

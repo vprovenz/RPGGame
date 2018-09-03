@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="AdventureQuest.cs" />
     <Compile Include="Boss.cs" />
-    <Compile Include="DoneQuest.cs" />
+    <Compile Include="FinishedQuest.cs" />
     <Compile Include="Elixir.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Item.cs" />

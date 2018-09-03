@@ -8,12 +8,12 @@ namespace Engine
 {
     public class Inventory
     {
-        public Item Details { get; set; }
+        public Item Item { get; set; }
         public int Quantity { get; set; }
 
-        public Inventory(Item details, int quantity)
+        public Inventory(Item item, int quantity)
         {
-            Details = details;
+            Item = item;
             Quantity = quantity;
         }
     }
