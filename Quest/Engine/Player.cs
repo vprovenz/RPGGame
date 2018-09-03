@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class Player : LivingCreature
+    public class Player : Creature
     {
         public int Gold { get; set; }
         public int ExperiencePoints { get; set; }

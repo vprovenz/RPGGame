@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class Boss : LivingCreature
+    public class Boss : Creature
     {
         public int ID { get; set; }
         public string Name { get; set; }

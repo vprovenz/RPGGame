@@ -23,7 +23,7 @@ namespace Quest
 
             player = new Player(10, 10, 20, 0, 1);
             MoveTo(Swamp.LocationByID(Swamp.LOCATION_ID_HOME));
-            player.Inventory.Add(new Inventory(Swamp.ItemByID(Swamp.ITEM_ID_RUSTY_SWORD), 1));
+            player.Inventory.Add(new Inventory(Swamp.ItemByID(Swamp.ITEM_ID_SLINGSHOT), 1));
 
             lblPoints.Text = player.CurrentPoints.ToString();
             lblGold.Text = player.Gold.ToString();
@@ -330,7 +330,7 @@ namespace Quest
                 {
                     if (RandomNumGenerator.NumberBetween(1, 100) <= lootItem.DropPercentage)
                     {
-                        lootedItems.Add(new Inventory(lootItem.Details, 1));
+                        lootedItems.Add(new Inventory(lootItem.Item, 1));
                     }
                 }
 
@@ -341,7 +341,7 @@ namespace Quest
                     {
                         if (lootItem.IsDefaultItem)
                         {
-                            lootedItems.Add(new Inventory(lootItem.Details, 1));
+                            lootedItems.Add(new Inventory(lootItem.Item, 1));
                         }
                     }
                 }

@@ -8,13 +8,13 @@ namespace Engine
 {
     public class Treasure
     {
-        public Item Details { get; set; }
+        public Item Item { get; set; }
         public int DropPercentage { get; set; }
         public bool IsDefaultItem { get; set; }
 
-        public Treasure(Item details, int dropPercentage, bool isDefaultItem)
+        public Treasure(Item item, int dropPercentage, bool isDefaultItem)
         {
-            Details = details;
+            Item = item;
             DropPercentage = dropPercentage;
             IsDefaultItem = isDefaultItem;
         }

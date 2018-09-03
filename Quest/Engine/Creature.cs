@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class LivingCreature
+    public class Creature
     {
         public int CurrentPoints { get; set; }
         public int MaximumPoints { get; set; }
 
-        public LivingCreature(int currentPoints, int maximumPoints)
+        public Creature(int currentPoints, int maximumPoints)
         {
             CurrentPoints = currentPoints;
             MaximumPoints = maximumPoints;
